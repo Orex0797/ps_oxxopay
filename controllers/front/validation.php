@@ -72,17 +72,17 @@ class Ps_OxxoPayValidationModuleFrontController extends ModuleFrontController
         // Validar el pedido y crearlo en PrestaShop
         $orderStatus = (int) Configuration::get('PS_OS_PAYMENT'); // Estado de "Esperando pago"
         $this->module->validateOrder(
-            (int) $cart->id,
-            $orderStatus,
-            $total,
-            $this->module->displayName,
-            null,
-            $mailVars,
-            (int) $currency->id,
-            false,
-            $customer->secure_key
-        );
-
+        (int) $cart->id,
+        $orderStatus,
+        $total,
+        $this->module->displayName,
+        null,
+        [],
+        (int) $currency->id,
+        false,
+        $customer->secure_key
+);
+        
         // Redirigir a la confirmación del pedido
         Tools::redirect('index.php?controller=order-confirmation&id_cart=' . (int) $cart->id .
             '&id_module=' . (int) $this->module->id .
