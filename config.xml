@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-    <name>ps_oxxopay</name>
+    <name>oxxopay</name>
     <displayName><![CDATA[Pago en OXXO]]></displayName>
     <version><![CDATA[1.0.0]]></version>
     <description><![CDATA[Permite a los clientes pagar en OXXO mediante depósito bancario.]]></description>
@@ -9,5 +9,4 @@
     <confirmUninstall><![CDATA[¿Estás seguro de que deseas desinstalar el módulo de pago en OXXO?]]></confirmUninstall>
     <is_configurable>1</is_configurable>
     <need_instance>1</need_instance>
-    <limited_countries></limited_countries>
 </module>
